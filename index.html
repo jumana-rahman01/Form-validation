@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation with JS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <form action="#" method="POST" name="custom_form" onsubmit="return validForm()">
+            <div class="form-box">
+                <div class="input-row">
+                    <input type="text" placeholder="Name*" name="name">
+                    <span class="error">Please enter your name</span>
+                </div>
+                <div class="input-row">
+                    <input type="text" placeholder="Email*" name="email">
+                    <span class="error">Please enter your email</span>
+                </div>
+                <div class="input-row">
+                    <input type="text" placeholder="Phone*" name="phone">
+                    <span class="error">Please enter your phone number</span>
+                </div>
+                <div class="input-row">
+                    <select name="subject">
+                        <option value="">Subject*</option>
+                        <option value="Design">Web Design</option>
+                        <option value="Development">Web Development</option>
+                        <option value="Marketing">Digital Marketing</option>
+                    </select>
+                    <span class="error">Please enter your subject</span>
+                </div>
+                <div class="input-row">
+                    <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <span class="error">Please enter your phone message</span>
+                </div>
+                <div class="input-row">
+                    <label class="check_label" for="conditions" style="padding-left:18px ;">Accept all terms and conditions</label>
+                    <input type="checkbox" name="conditions" id="conditions">
+                    <span class="error">Please accept all terms and conditions</span>
+                </div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="js/custom.js"></script>
+</body>
+</html>
